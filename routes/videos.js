@@ -35,7 +35,7 @@ router.post("/", (req, res) => {
     id: uuid(),
     title: req.body.title,
     channel: "myvideochannel",
-    image: "/uploadVideo.jpg",
+    image: "http://localhost:5001/images/UploadVideo.jpg",
     description: req.body.description,
     views: 0,
     likes: 0,

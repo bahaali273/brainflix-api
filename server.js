@@ -5,7 +5,7 @@ const port = process.env.PORT;
 const cors = require("cors");
 const videosRoutes = require("./routes/videos");
 
-app.use(express.static("public/images")); // allows access to public folder
+app.use(express.static("public")); // allows access to public folder
 app.use(express.json()); // parses req.body
 app.use(cors());
 
